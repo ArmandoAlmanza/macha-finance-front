@@ -6,7 +6,10 @@ export default {
         extend: {
             fontFamily: {
                 primary: ["Montserrat", ...defaultTheme.fontFamily.sans],
-                secundary: ["Roboto", ...defaultTheme.fontFamily.sans],
+                secundary: ["Roboto Flex", ...defaultTheme.fontFamily.sans],
+            },
+            backgroundImage: {
+                "card-pattern": "url('/pattern.jpg')",
             },
         },
     },
