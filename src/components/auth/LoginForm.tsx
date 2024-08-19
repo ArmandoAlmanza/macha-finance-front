@@ -24,7 +24,7 @@ const LoginForm = ({ setState }: Props) => {
             alert("please enter a valid email");
             return;
         }
-        navigate(`/dashboard/:${user.email}`);
+        navigate(`/dashboard/${user.email}`);
     };
 
     return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import LoginForm from "../components/auth/LoginForm";
-import RegisterForm from "../components/auth/Registerform";
 import logo from "/logo.png";
+import RegisterForm from "../components/auth/RegisterForm";
 
 const AuthPage = () => {
     const [state, setState] = useState("login");
