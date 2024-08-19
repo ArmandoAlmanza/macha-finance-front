@@ -1,9 +1,11 @@
+import TotalCard from "./card/TotalCard";
 
 const MainView = () => {
     return (
-        <div>
+        <main className="p-5">
             <h1>here will be tour finances</h1>
-        </div>
+            <TotalCard />
+        </main>
     );
 };
 
