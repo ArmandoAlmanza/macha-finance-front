@@ -9,9 +9,18 @@ const TotalCard = () => {
     };
 
     const newCurrency = {
-        amount: money.amount.toLocaleString("es-MX"),
-        income: money.income.toLocaleString("es-MX"),
-        expend: money.expend.toLocaleString("es-MX"),
+        amount: money.amount.toLocaleString("es-MX", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+        }),
+        income: money.income.toLocaleString("es-MX", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+        }),
+        expend: money.expend.toLocaleString("es-MX", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+        }),
     };
     return (
         <article className="bg-card-pattern bg-center bg-cover text-white p-5 rounded-2xl grid gap-4">
